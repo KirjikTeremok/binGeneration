@@ -1,0 +1,7 @@
+def gen(n: int, prefix: str):
+    if n==0:#остановка рекурсии
+        print(prefix)
+    else:
+        gen(n-1, prefix+[0])
+        gen(n-1, prefix+[1])
+gen(4,[])
